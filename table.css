@@ -33,7 +33,9 @@ td {
 	background-color: rgba(255,255,255,0.2);
 	color: #fff;
 }
-
+th {
+	text-align: left;
+}	
 
 thead {
 	th {
@@ -48,6 +50,18 @@ tbody {
 	}
 	
 		}
+td {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -1000px;
+		bottom: -9999px;
+		background-color: rgba(255,255,255,0.2));
+		z-index: -1;
+	}
 	}
 }
 button {width: 70px;
