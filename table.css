@@ -34,9 +34,6 @@ td {
 	color: #fff;
 }
 
-th {
-	text-align: left;
-}
 
 thead {
 	th {
@@ -49,19 +46,7 @@ tbody {
 			background-color: rgba(255,255,255,0.3);
 		}
 	}
-	td {
-		position: relative;
-		&:hover {
-			&:before {
-			    content: "";
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: -1000px;
-				bottom: -9999px;
-				background-color: rgba(255,255,255,0.2));
-				z-index: -1;
-			}
+	
 		}
 	}
 }
